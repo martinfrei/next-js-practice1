@@ -180,9 +180,91 @@ const revenue = [
   { month: 'Dec', revenue: 4800 },
 ];
 
+const mockStudents = [
+  {
+    idStudent: '3958dc9e-712f-4377-85e9-fec4b6a6442a',
+    dni: '75684255',
+    name: 'Martin Frei',
+    phone: '11589784555', 
+    email: 'maritn.frei02@gmail.com',
+  },
+  {
+    idStudent: '3958dc9e-742f-4377-85e9-fec4b6a6442a',
+    dni: '6549678',
+    name: 'Nico vil',
+    phone: '1158978455',
+    email: 'nico.vil@gmail.com',
+  },
+  {
+    idStudent: '126eed9c-c90c-4ef6-a4a8-fcf7408d3c66',
+    dni: '7842465454',
+    name: 'Kari Alarcon',
+    phone: '11589784555',
+    email: 'kari.alarcon@gmail.com',
+  },
+]
+
+const mockPayments=[
+  {
+    idPayment:'13D07535-C59E-4157-A011-F8D2EF4E0CBB',
+    quantity:4,
+    date:'2024-03-20',
+    idStudent: '3958dc9e-712f-4377-85e9-fec4b6a6442a',
+  },
+  {
+    idPayment:'CC27C14A-0ACF-4F4A-A6C9-D45682C144B9',
+    quantity:8,
+    date:'2024-01-20',
+    idStudent: '3958dc9e-742f-4377-85e9-fec4b6a6442a',
+  }
+];
+
+const mockClasses=[
+  {
+    idClass:'3958dc9e-737f-4377-85e9-fec4b6a6442a',
+    name:'salsa inicial'
+  },
+  {
+    idClass:'3958dc9e-737f-4378-85e9-fec4b6a6442a',
+    name:'salsa intermedio'
+  },
+  {
+    idClass:'3958dc9e-737f-4379-85e9-fec4b6a6442a',
+    name:'salsa avanzado'
+  },
+  {
+    idClass:'3958dc9e-737f-3379-85e9-fec4b6a6442a',
+    name:'bachata'
+  }
+]
+
+const mockStudentClass=[
+  {
+    idStudent:'3958dc9e-712f-4377-85e9-fec4b6a6442a',
+    idClass:'3958dc9e-737f-4377-85e9-fec4b6a6442a',
+    date:'2024-03-20',
+
+  },
+  {
+    idStudent:'3958dc9e-712f-4377-85e9-fec4b6a6442a',
+    idClass:'3958dc9e-737f-4378-85e9-fec4b6a6442a',
+    date:'2024-03-21',
+
+  },
+  {
+    idStudent:'126eed9c-c90c-4ef6-a4a8-fcf7408d3c66',
+    idClass:'3958dc9e-737f-3379-85e9-fec4b6a6442a',
+    date:'2024-03-22',
+
+  }
+]
 module.exports = {
   users,
   customers,
   invoices,
   revenue,
+  mockStudents,
+  mockPayments,
+  mockClasses,
+  mockStudentClass
 };

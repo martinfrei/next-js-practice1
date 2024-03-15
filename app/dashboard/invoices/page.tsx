@@ -7,6 +7,7 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { fetchStudents } from '@/app/lib/data-two';
 
 export default async function Page({ searchParams }: {
     searchParams?: {
@@ -16,7 +17,8 @@ export default async function Page({ searchParams }: {
 }) {
     const query = searchParams?.query || '';
     const currentPage = Number(searchParams?.page) || 1;
-
+    const students = await fetchStudents()
+    console.log({ students })
     const totalPages = await fetchInvoicesPages(query)
     return (
         <div className="w-full">

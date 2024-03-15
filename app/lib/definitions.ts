@@ -9,6 +9,14 @@ export type User = {
   password: string;
 };
 
+export type Student = {
+  idStudent: string,
+  dni: string,
+  name: string,
+  phone: string,
+  email: string,
+}
+
 export type Customer = {
   id: string;
   name: string;
